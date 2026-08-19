@@ -48,9 +48,9 @@ public class FileSound extends AbstractTickableSoundInstance {
 		}
 
 		else if (position != null) {
-			this.x = position.getCenter().x;
-			this.y = position.getCenter().y;
-			this.z = position.getCenter().z;
+			this.x = position.getX() + 0.5;
+			this.y = position.getY() + 0.5;
+			this.z = position.getZ() + 0.5;
 		}
 	}
 
